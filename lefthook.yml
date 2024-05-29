@@ -1,0 +1,5 @@
+pre-commit:
+  commands:
+    check:
+      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,vue,html,md,yml,yaml.toml,xml,astro,css,scss,less,pcss,}'
+      run: bunx eslint {staged_files} && git update-index --again
